@@ -31,19 +31,20 @@ public class FirstActivity extends AppCompatActivity {
         myButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                buttonPressed = !buttonPressed;
+                buttonPressed = true;
                 if (buttonPressed) {
                     myButton.setBackgroundResource(R.drawable.heart_style);
-                }else {
+                }else if (buttonPressed = false){
                     myButton.setBackgroundResource(R.drawable.hearth_white_style);
                 }
             }
         });
+        nextClick(findViewById(R.id.next));
     }
 
     public void nextClick(View view) {
-        if (view.getId()==R.id.next){
+        findViewById(R.id.next).setOnClickListener(v -> {
             finishAffinity();
-        }
+        });
     }
 }
