@@ -12,7 +12,7 @@ import com.google.android.material.slider.RangeSlider;
 public class FirstActivity extends AppCompatActivity {
 
     private Button myButton;
-    private Boolean buttonPressed = false;
+    private Boolean buttonPressed = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
